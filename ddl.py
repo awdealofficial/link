@@ -333,7 +333,7 @@ def mdisk(url):
 
     id = url.split("/")[-1]
     URL = f'https://diskuploader.entertainvideo.com/v1/file/cdnurl?param={id}'
-    return requests.get(url=URL, headers=header).json()['source']
+    return requests.get(url=URL, headers=header).json()['download']
 
 def wetransfer(url):
     api = "https://api.emilyx.in/api/direct"
